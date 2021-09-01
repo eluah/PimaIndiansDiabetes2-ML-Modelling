@@ -3,9 +3,11 @@
 This report uses the PimaIndiansDiabetes2 dataset from the “mlbench” package in R for the purpose of building a model to predict diabetes with certain information. The hypothesis is that logistic regression is the most accurate model as the outcome variable(diabetes) is a binary value. Diabetes is a life-threatening disease that affects many people and being able to predict diabetes allow us to pre-empt diabetes and recommend possible prevention measure.
 
 # 2 Data description and data cleansing 
-PimaIndians diabetes dataset was used. This dataset consists of 768 records with 500 records for non-diabetic class and 268 diabetic class. We clean the dataset by removing the incomplete cases in the PimaIndiansDiabetes2 dataset which results in 392 records; 262 records for non-diabetic class and 130 records for diabetic class. Next, we manipulate it by changing “diabetes” variable values from pos/neg to binary values. We then spilt the dataset, use 80% for training the model and the remaining 20% for testing the model.
+PimaIndians diabetes dataset was used. This dataset consists of 768 records with 500 records for non-diabetic class and 268 diabetic class. We clean the dataset by removing the incomplete cases in the PimaIndiansDiabetes2 dataset which results in 392 records; 262 records for non-diabetic class and 130 records for diabetic class. Next, we plot histograms of all the variables to observe their distribution. 
 
 ![hist](./img/hist.png)
+
+Finally, we manipulate it by changing “diabetes” variable values from pos/neg to binary values. We then spilt the dataset, use 80% for training the model and the remaining 20% for testing the model.
 
 # 3 Key ML techniques used 
 Since diabetes is a categorical variable, we will use classification machine learning techniques to find the best model to predict diabetes.
@@ -29,9 +31,10 @@ We will use classification accuracy as the quality measure. Classification accur
 Classification Accuracy=(TP+TN) / (TP+TN+FP+FN)  
 
 # 4 Results and discussion
-The three machine learning techniques mentioned above were applied for the classification of 79 diabetes records; 56 records of non-diabetic class and 23 records of diabetic class. Confusion matrix of prediction results are tabulated in Table 1 for SVM, logistic regression and kNN.
-From Fig 1, we can observe that kNN has the best classification accuracy of 81.0%. However, when we look at Table 1, we observe that aside from SVM with radial kernel, the other 3 classification methods have similar confusion matrixes. This could be due to the low sample size of 79 for testing the model and a larger sample size may be needed for better classification accuracy.
+The three machine learning techniques mentioned above were applied for the classification of 79 diabetes records; 56 records of non-diabetic class and 23 records of diabetic class. Confusion matrix of prediction results are tabulated in Table 1 to Table 4 for SVM, logistic regression and kNN.
+From Fig 1, we can observe that kNN has the best classification accuracy of 81.0%. However, when we look at Table 1 to Table 4, we observe that aside from SVM with radial kernel, the other 3 classification methods have similar confusion matrixes. This could be due to the low sample size of 79 for testing the model and a larger sample size may be needed for better classification accuracy.
 
+**Fig 1**
 | Method  | Classification Accuracy |
 | ------------- | ------------- |
 | SVM with linear kernel  | 79.7%  |
@@ -39,11 +42,7 @@ From Fig 1, we can observe that kNN has the best classification accuracy of 81.0
 | Logistic regression  | 78.5%  |
 | kNN   | 81.0%  |
 
-Fig 1
-
 ![ml_models](./img/ml_models.png)
-
-Table 1
 
 # 5 Evaluation and possible improvements
 
