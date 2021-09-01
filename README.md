@@ -28,13 +28,14 @@ We will be using confusion matrixes to describe classification performance.  We 
 3)	True Negative (TN) – number of records with non-diabetic class predicted as non-diabetic class. 
 4)	False Negative (FN) – number of records with diabetic class predicted as non-diabetic class. 
 We will use classification accuracy as the quality measure. Classification accuracy is defined as the ratio of occurrences that are appropriately categorized by the classification technique. 
+
 Classification Accuracy=(TP+TN) / (TP+TN+FP+FN)  
 
 # 4 Results and discussion
 The three machine learning techniques mentioned above were applied for the classification of 79 diabetes records; 56 records of non-diabetic class and 23 records of diabetic class. Confusion matrix of prediction results are tabulated in Table 1 to Table 4 for SVM, logistic regression and kNN.
 From Fig 1, we can observe that kNN has the best classification accuracy of 81.0%. However, when we look at Table 1 to Table 4, we observe that aside from SVM with radial kernel, the other 3 classification methods have similar confusion matrixes. This could be due to the low sample size of 79 for testing the model and a larger sample size may be needed for better classification accuracy.
 
-**Fig 1**
+   **Fig 1**
 | Method  | Classification Accuracy |
 | ------------- | ------------- |
 | SVM with linear kernel  | 79.7%  |
@@ -57,7 +58,5 @@ The dataset used had 262 records for non-diabetic class and 130 records for diab
 From the analysis, the kNN model is the most accurate when it comes to predicting diabetes, but further improvements are needed to optimise the model and improve its classification accuracy as mentioned in the previous section.
 
 # 7 Appendix
-
 ![k_accuracy](./img/k_accuracy.png)
-
-Accuracy plot for k value for kNN
+**Accuracy plot for k value for kNN**
