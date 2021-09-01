@@ -35,7 +35,7 @@ Classification Accuracy=(TP+TN) / (TP+TN+FP+FN)
 The three machine learning techniques mentioned above were applied for the classification of 79 diabetes records; 56 records of non-diabetic class and 23 records of diabetic class. Confusion matrix of prediction results are tabulated in Table 1 to Table 4 for SVM, logistic regression and kNN.
 From Fig 1, we can observe that kNN has the best classification accuracy of 81.0%. However, when we look at Table 1 to Table 4, we observe that aside from SVM with radial kernel, the other 3 classification methods have similar confusion matrixes. This could be due to the low sample size of 79 for testing the model and a larger sample size may be needed for better classification accuracy.
 
-   **Fig 1**
+**Fig 1**
 | Method  | Classification Accuracy |
 | ------------- | ------------- |
 | SVM with linear kernel  | 79.7%  |
@@ -59,4 +59,5 @@ From the analysis, the kNN model is the most accurate when it comes to predictin
 
 # 7 Appendix
 ![k_accuracy](./img/k_accuracy.png)
+
 **Accuracy plot for k value for kNN**
