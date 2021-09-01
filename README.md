@@ -58,6 +58,6 @@ The dataset used had 262 records for non-diabetic class and 130 records for diab
 From the analysis, the kNN model is the most accurate when it comes to predicting diabetes, but further improvements are needed to optimise the model and improve its classification accuracy as mentioned in the previous section.
 
 # 7 Appendix
-![k_accuracy](./img/k_accuracy.png)
-
 **Accuracy plot for k value for kNN**
+
+![k_accuracy](./img/k_accuracy.png)
